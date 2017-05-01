@@ -9,7 +9,7 @@ Built with draw.io ([assets/UseCase.xml](XML-asset))
 
 ## Systems
 
-![alt text](assets/System.png "System overview")
+![System overview](assets/System.png)
 Built with draw.io ([XML asset](assets/System.xml))
 
 
