@@ -1,0 +1,114 @@
+﻿<Window x:Class="rosbridge_client_example_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="C# Rosbridge Client Example"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Grid.Row="0" Header="Rosbridge" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0">Rosbridge Server URI</Label>
+                <TextBox Grid.Column="1" Grid.Row="0" x:Name="URITextBox" Padding="5"></TextBox>
+                <Label Grid.Column="1" Grid.Row="1" FontSize="8">e.g.: ws://localhost:9090</Label>
+
+                <Button Grid.Column="2" Grid.Row="0" x:Name="ConnectButton" Click="ConnectButton_Click" Margin="10 0 0 0" Padding="5" >Connect</Button>
+            </Grid>
+
+        </GroupBox>
+
+        <GroupBox x:Name="PublishGroupBox" Grid.Row="1" Header="Publish" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0">Topic</Label>
+                <TextBox Grid.Column="1" Grid.Row="0" x:Name="PubTopicTextBox"  Padding="5"></TextBox>
+                <Label Grid.Column="1" Grid.Row="1" FontSize="8">e.g.: /my__topic</Label>
+
+                <Label Grid.Column="2" Grid.Row="0" Margin="10 0 0 0">Message Type</Label>
+                <TextBox Grid.Column="3" Grid.Row="0" x:Name="PubTypeTextBox" Padding="5"></TextBox>
+                <Label Grid.Column="3" Grid.Row="1" FontSize="8">e.g.: geometry__msgs/Point</Label>
+
+                <Button Grid.Column="4" Grid.Row="0" x:Name="StartPublisherButton" Margin="10 0 0 0" Padding="5" Click="StartPublisherButton_Click">Start Publisher</Button>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox x:Name="SubscribeGroupBox" Grid.Row="2" Header="Subscribe" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <Label Grid.Column="0" Grid.Row="0">Topic</Label>
+                <TextBox Grid.Column="1" Grid.Row="0" x:Name="SubTopicTextBox" Padding="5"></TextBox>
+                <Label Grid.Column="1" Grid.Row="1" FontSize="8">e.g.: /my__topic</Label>
+
+                <Label Grid.Column="2" Grid.Row="0" Margin="10 0 0 0">Message Type</Label>
+                <TextBox Grid.Column="3" Grid.Row="0" x:Name="SubTypeTextBox" Padding="5"></TextBox>
+                <Label Grid.Column="3" Grid.Row="1" FontSize="8">e.g.: geometry__msgs/Point</Label>
+
+                <Button Grid.Column="4" Grid.Row="0" x:Name="StartSubscriberButton" Margin="10 0 0 0" Padding="5" Click="StartSubscriberButton_Click">Start Subscriber</Button>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox x:Name="ServicesGroupBox" Grid.Row="3" Header="Services" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0">Topic</Label>
+                <TextBox Grid.Column="1" Grid.Row="0" x:Name="ServiceTextBox" Padding="5"></TextBox>
+                <Label Grid.Column="1" Grid.Row="1" FontSize="8">e.g.: /add__two__ints</Label>
+
+                <Button Grid.Column="4" Grid.Row="0" x:Name="StartServiceClientButton" Margin="10 0 0 0" Padding="5" Click="StartServiceClientButton_Click">Start Service Client</Button>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
