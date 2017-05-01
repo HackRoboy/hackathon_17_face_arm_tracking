@@ -20,7 +20,7 @@ Built with draw.io ([XML asset](assets/System.xml))
  - OS: Windows 10 (on a Lenovo T460p)
  - Programming languages: C#
  - IDEs: Visual Studio 2015 Community Edition
- - Project: [face_tracking_realsense](./face_tracking_realsense)
+ - Project: [face_tracking_intel_realsense](./face_tracking_intel_realsense)
  - Used objects: 
 	- Intel F2000
 	- Robot arm
