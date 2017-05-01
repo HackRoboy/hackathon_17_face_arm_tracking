@@ -1,28 +1,7 @@
-Rosbridge .NET Client (Addon: with Intel Realsense support) - C#
+Rosbridge .NET Client
 =====================
 
 This is a .NET library which provides a client for the [Rosbridge Suite](http://wiki.ros.org/rosbridge_suite).
-
-## Installation
-
-Please follow first the installation process of the following link for the project `rosbridge_client_example_wpf`:
-https://software.intel.com/en-us/articles/get-started-developing-intel-realsense-sdk-for-windows-10-desktop-apps
-
-> Most of the installation processes are still set but often the path is wrong because you have to set there an absolute path. Just adjust the paths and everything should work fine. 
-
-This is a .NET library which provides a client for the [Rosbridge Suite](http://wiki.ros.org/rosbridge_suite).
-
-## Disclaimer
-
-This module is mostly received by the following sources and modified:  
- - https://github.com/zeltner/rosbridge_client_dot_net
- - https://software.intel.com/en-us/articles/intel-realsense-depth-camera-r200-code-sample-face-tracking
-
-### Overview
-The Visual Studio solution comes with three projects:
-- rosbridge_client_common : The common part of the library
-- rosbridge_client_socket_for_desktop : The WPF part of the library (for Windows desktop applications)
-- rosbridge_client_example_wpf : Windows desktop applications example
 
 ### Overview
 The Visual Studio solution comes with three projects:

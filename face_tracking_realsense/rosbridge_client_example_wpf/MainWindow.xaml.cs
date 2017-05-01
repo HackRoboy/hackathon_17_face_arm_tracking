@@ -30,6 +30,9 @@ namespace rosbridge_client_example_wpf
             InitializeComponent();
 
             ToggleConnected();
+            URITextBox.Text = "ws://10.42.0.1:9090";
+            PubTopicTextBox.Text = "/balloonPosition";
+            PubTypeTextBox.Text = "geometry_msgs/Point32";
         }
 
         private void ToggleConnected()

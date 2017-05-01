@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rosbridge_client_example_wpf", "rosbridge_client_example_wpf\rosbridge_client_example_wpf.csproj", "{6CB10F57-2F05-42D8-BEBA-5FE92E69158B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rosbridge_client_desktop", "rosbridge_client_socket_for_desktop\rosbridge_client_desktop.csproj", "{7B7BA4BB-4789-400B-9373-20321A8FB966}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rosbridge_client_common", "rosbridge_client_common\rosbridge_client_common.csproj", "{7167262B-09B1-435B-AC01-6A3F94449C72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceTracking", "..\FaceTracking\FaceTracking\FaceTracking.csproj", "{9765D640-595E-45DE-B380-044BBA593F40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,22 @@ Global
 		{7167262B-09B1-435B-AC01-6A3F94449C72}.Release|ARM.ActiveCfg = Release|Any CPU
 		{7167262B-09B1-435B-AC01-6A3F94449C72}.Release|x64.ActiveCfg = Release|Any CPU
 		{7167262B-09B1-435B-AC01-6A3F94449C72}.Release|x86.ActiveCfg = Release|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Debug|ARM.Build.0 = Debug|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Debug|x64.Build.0 = Debug|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Debug|x86.Build.0 = Debug|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Release|ARM.ActiveCfg = Release|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Release|ARM.Build.0 = Release|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Release|x64.ActiveCfg = Release|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Release|x64.Build.0 = Release|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Release|x86.ActiveCfg = Release|Any CPU
+		{9765D640-595E-45DE-B380-044BBA593F40}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
