@@ -9,13 +9,11 @@ Built with draw.io ([assets/UseCase.xml](XML-asset))
 
 ## Systems
 
-![alt text](assets/System.jpg "System overview")
+![alt text](assets/System.png "System overview")
 Built with draw.io ([XML asset](assets/System.xml))
 
 
 ### Face-Tracking System
-
-> In this system, the 
 
  - OS: Windows 10 (on a Lenovo T460p)
  - Programming languages: C#
